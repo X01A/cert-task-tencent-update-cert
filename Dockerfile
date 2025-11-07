@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # Build stage: compile the Go binary with modules cached.
-FROM golang:1.22-bookworm AS build
+FROM golang:1.23.4-bookworm AS build
 WORKDIR /src
 
 # Leverage go modules cache while keeping the final image small.
